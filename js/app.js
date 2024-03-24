@@ -7,9 +7,9 @@
 
 const arrayStudenti = [
     {
-    nome: 'mario',
-    cognome: 'rossi',
-    eta: '18'
+        nome: 'mario',
+        cognome: 'rossi',
+        eta: '18'
     },
     {
         nome: 'giuseppe',
@@ -59,10 +59,20 @@ function getInput() {
     const surname = InputUserSurname.value;
     const age = InputUserAge.value;
     // console.log(name, surname, age)
+
+    // CREO una variabile per ottenere il nuovo studente come oggetto
+    const nuovoStudente = {
+        nome: name,
+        cognome: surname,
+        eta: age,
+    };
+
+    // Aggiungo il nuovo studente all’array di studenti
+    arrayStudenti.push(nuovoStudente);
+    // console.log(arrayStudenti)
 }
 
 
-// Aggiungere il nuovo studente all’array di studenti
 
 
 // Ciclare su tutti gli studenti e stampare per ognuno di essi tutte le proprietà nome, cognome, eta
