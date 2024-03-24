@@ -69,12 +69,20 @@ function getInput() {
 
     // Aggiungo il nuovo studente all’array di studenti
     arrayStudenti.push(nuovoStudente);
-    // console.log(arrayStudenti)
+    console.log(arrayStudenti)
+
+    // Ciclare su tutti gli studenti e stampare per ognuno di essi tutte le proprietà nome, cognome, eta
+    // for (let i = 0; i < arrayStudenti.length; i++) {
+    //  const studenti = arrayStudenti[i];
+    //  console.log(studenti.nome, studenti.cognome, studenti.eta)
+    // }
+
+// prima ciclate con un ciclo for
+// poi commentate il ciclo for e usate il forEach
+arrayStudenti.forEach(studenti => console.log(studenti.nome, studenti.cognome, studenti.eta + ' anni'));
+
 }
 
 
 
 
-// Ciclare su tutti gli studenti e stampare per ognuno di essi tutte le proprietà nome, cognome, eta
-// prima ciclate con un ciclo for
-// poi commentate il ciclo for e usate il forEach
