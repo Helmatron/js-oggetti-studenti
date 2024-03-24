@@ -9,13 +9,13 @@
 <!-- BODY -->
 <body>
 
-    <!-- HEADER STYLE -->
+    <!-- STYLE CSS -->
     <style>
+        /* HEADER STYLE */
         header {
             display: flex;
             justify-content: center;
             font-family: sans-serif;
-            
         }
 
         .hstyle {
@@ -27,6 +27,51 @@
             border-radius: 25px;
             width: 350px;
         }
+
+        /* MAIN STYLE */
+        main {
+            display: flex;
+            justify-content: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            border: solid;
+            border-color: rgb(219, 219, 219);
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 5px 5px 5px #dedede;
+            color: black;
+            border-radius: 25px;
+            width: 300px;
+            height: 200px;
+            padding: 25px;
+        }
+
+        .items {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* BUTTON STYLE */
+        button {
+            border: solid;
+            border-color: rgb(154, 154, 154);
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+            width: 100px;
+            
+        }
+        
+        button:hover {
+            background-color: rgb(161, 222, 255);
+            font-weight: bold;
+        }
     </style>
 
     <!-- HEADER -->
@@ -37,6 +82,26 @@
         </div>
     </header>
 
+    <!-- MAIN -->
+    <main>
+        <div class="form">
+            <div class="items">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="items">
+                <label for="surname">Cognome</label>
+                <input type="text" id="surname" name="surname">
+            </div>
+            <div class="items">
+                <label for="age">Età</label>
+                <input type="age" id="age" name="age">
+            </div>
+            <div class="items">
+            <button type="button">INVIA</button>
+            </div>
+        </div>
+    </main>
 
     <!-- LINK JAVASCRIPT -->
     <script src="./js/app.js"></script>
