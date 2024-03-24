@@ -37,11 +37,34 @@ arrayStudenti.forEach(studenti => console.log(studenti.nome, studenti.cognome));
 
 // Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
+
 //CHIEDO all'utente gli elementi e li prendo dal form
-const nomeUtente = getElement
+// RECUPERO il nome
+const InputUserName = document.getElementById('name')
+
+// RECUPERO il cognome
+const InputUserSurname = document.getElementById('surname')
+// RECUPERO l'età
+const InputUserAge = document.getElementById('age')
+
+// INVIO i dati
+const buttonElement = document.getElementById('submit')
+
+// EVENTO click e avvio funzione
+buttonElement.addEventListener('click', getInput)
+
+// FUNZIONE per recuperare i dati inseriti dall'utente collegata al bottone
+function getInput() {
+    const name = InputUserName.value;
+    const surname = InputUserSurname.value;
+    const age = InputUserAge.value;
+    // console.log(name, surname, age)
+}
 
 
 // Aggiungere il nuovo studente all’array di studenti
+
+
 // Ciclare su tutti gli studenti e stampare per ognuno di essi tutte le proprietà nome, cognome, eta
 // prima ciclate con un ciclo for
 // poi commentate il ciclo for e usate il forEach
